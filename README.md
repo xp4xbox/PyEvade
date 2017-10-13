@@ -15,6 +15,6 @@ PyEvade requires:
 3. Set `encryptedShellcode` to be your encrypted shellcode in [payload.py](https://github.com/xp4xbox/PyEvade/blob/master/payload.py).
 4. Run `python setup.py` to build your program to standalone .exe.
 
-# How It Works
+## How It Works
 
 This tool works by encrypting the raw metasploit payload to base64. Then decoding it and injecting the raw shellcode into the file itself on execution.
