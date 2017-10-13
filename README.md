@@ -10,7 +10,7 @@ PyEvade requires:
 
 # Usage
 
-1. Generate raw shellcode using metasploit using -f python to get the correct output. eg. (eg. xr8\x02...)
+1. Generate raw shellcode using metasploit using `-f python` to get the correct output. eg. (eg. xr8\x02...)
 2. Generate encrypted shellcode using the [encrypter](https://github.com/xp4xbox/PyEvade/blob/master/encrypter.py). Setting `shellcode` to be your raw shellcode as one line.
 3. Set `encryptedShellcode` to be your encrypted shellcode in [payload.py](https://github.com/xp4xbox/PyEvade/blob/master/payload.py).
 4. Run `python setup.py` to build your program to standalone .exe.
