@@ -7,4 +7,4 @@ encryptedshellcode = base64.b64encode(shellcode)
 
 os.system("echo " + encryptedshellcode + "|clip")
 
-print "encrypted shellcode copied to clipboard"
+print "encoded shellcode copied to clipboard"
