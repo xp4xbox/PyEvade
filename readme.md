@@ -11,10 +11,10 @@ PyEvade requires:
 ## Usage
 
 1. Generate raw shellcode using metasploit using `-f python` to get the correct output. eg. (eg. xr8\x02...)
-2. Generate encrypted shellcode using the [encrypter](https://github.com/xp4xbox/PyEvade/blob/master/encrypter.py). Setting `shellcode` to be your raw shellcode as one line.
-3. Set `encryptedShellcode` to be your encrypted shellcode in [payload.py](https://github.com/xp4xbox/PyEvade/blob/master/payload.py).
+2. Generate encoded shellcode using the [encoder](https://github.com/xp4xbox/PyEvade/blob/master/encoder.py). Setting `shellcode` to be your raw shellcode as one line.
+3. Set `encodedShellcode` to be your encoded shellcode in [payload.py](https://github.com/xp4xbox/PyEvade/blob/master/payload.py).
 4. Run `python setup.py` to build your program to standalone .exe.
 
 ### How It Works
 
-This tool works by encrypting the raw metasploit payload to base64. Then decoding it and injecting the raw shellcode into the file itself on execution.
+This tool works by encoding the raw metasploit payload to base64. Then decoding it and injecting the raw shellcode into the file itself on execution.
